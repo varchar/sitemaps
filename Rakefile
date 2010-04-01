@@ -4,7 +4,7 @@ require 'tasks/rails'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "sitemaps"
+    gem.name = "easy-sitemaps"
     gem.summary = %Q{Easy Sitemaps for Rails}
     gem.email = "charlesmbowman@gmail.com"
     gem.homepage = "http://github.com/varchar/foo"
