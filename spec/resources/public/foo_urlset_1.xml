@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>foo</loc>
+    <lastmod>0012-12-12T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>2</priority>
+  </url>
+</urlset>
