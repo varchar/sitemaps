@@ -4,13 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{foo}
+  s.name = %q{sitemaps}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["varchar"]
+  s.authors = ["varchar", "robustdj"]
   s.date = %q{2010-04-01}
-  s.description = %q{TODO: longer description of your gem}
   s.email = %q{charlesmbowman@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -18,26 +17,32 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    "README",
+    "LICENSE",
+     "README",
+     "README.rdoc",
+     "Rakefile",
      "VERSION",
      "init.rb",
-     "lib/Rakefile",
      "lib/ip/active_record.rb",
      "lib/ip/processor.rb",
      "lib/ip/urlset.rb",
+     "pkg/sitemaps-0.0.1.gem",
+     "sitemaps.gemspec",
      "spec/ip/processor_spec.rb",
      "spec/ip/urlset_spec.rb",
      "spec/resources/foo.rb",
      "spec/resources/public/foo_urlset_1.xml",
      "spec/resources/public/foo_urlset_1.xml.gz",
      "spec/resources/public/sitemap_index.xml",
-     "spec/resources/sitemap.xml"
+     "spec/resources/sitemap.xml",
+     "tasks/rails.rb",
+     "tasks/sitemaps.rake"
   ]
   s.homepage = %q{http://github.com/varchar/foo}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Easy Sitemaps for Rails}
   s.test_files = [
     "spec/ip/processor_spec.rb",
      "spec/ip/urlset_spec.rb",
@@ -49,12 +54,21 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 1.2.0"])
+      s.add_development_dependency(%q<roxml>, [">= 3.0"])
+      s.add_development_dependency(%q<action_view>, [">= 2.3.2"])
+      s.add_development_dependency(%q<action_controller>, [">= 2.3.2"])
     else
-      s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 1.2.0"])
+      s.add_dependency(%q<roxml>, [">= 3.0"])
+      s.add_dependency(%q<action_view>, [">= 2.3.2"])
+      s.add_dependency(%q<action_controller>, [">= 2.3.2"])
     end
   else
-    s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 1.2.0"])
+    s.add_dependency(%q<roxml>, [">= 3.0"])
+    s.add_dependency(%q<action_view>, [">= 2.3.2"])
+    s.add_dependency(%q<action_controller>, [">= 2.3.2"])
   end
 end
 
