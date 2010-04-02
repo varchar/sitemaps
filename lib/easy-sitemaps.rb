@@ -1,3 +1,3 @@
-require 'lib/ip/processor'
-require 'lib/urlset'
-require 'lib/active_record'
+require 'ip/processor'
+require 'ip/urlset'
+require 'ip/active_record'
