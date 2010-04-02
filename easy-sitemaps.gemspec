@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
      "lib/ip/processor.rb",
      "lib/ip/urlset.rb",
      "pkg/easy-sitemaps-0.0.1.gem",
+     "pkg/easy-sitemaps-0.0.2.gem",
      "pkg/sitemaps-0.0.1.gem",
      "sitemaps-0.0.1.gem",
      "spec/ip/processor_spec.rb",
